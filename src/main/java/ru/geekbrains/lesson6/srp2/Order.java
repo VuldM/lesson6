@@ -4,41 +4,57 @@ import java.util.Scanner;
 
 public class Order {
 
-    private static String clientName;
+    private  String clientName;
 
-    private static String product;
+    private  String product;
 
-    private static int qnt;
+    private  int qnt;
 
-    private static int price;
+    private  int price;
     public Order(){
     }
-      public void inputFromConsole(){
-        clientName = prompt("Client name: ");
-        product = prompt("Product: ");
-        qnt = Integer.parseInt(prompt("Quantity: "));
-        price = Integer.parseInt(prompt("Price: "));
-    }
-    private String prompt(String message) {
-        Scanner in = new Scanner(System.in);
-        System.out.print(message);
-        return in.nextLine();
-    }
+//      public void inputFromConsole(){
+//        clientName = prompt("Client name: ");
+//        product = prompt("Product: ");
+//        qnt = Integer.parseInt(prompt("Quantity: "));
+//        price = Integer.parseInt(prompt("Price: "));
+//    }
+//    private String prompt(String message) {
+//        Scanner in = new Scanner(System.in);
+//        System.out.print(message);
+//        return in.nextLine();
+//    }
 
 
-    public static String getClientName() {
+    public void setClientName(String clientName) {
+        this.clientName = clientName;
+    }
+
+    public void setProduct(String product) {
+        this.product = product;
+    }
+
+    public void setQnt(int qnt) {
+        this.qnt = qnt;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public  String getClientName() {
         return clientName;
     }
 
-    public static String getProduct() {
+    public  String getProduct() {
         return product;
     }
 
-    public static int getQnt() {
+    public int getQnt() {
         return qnt;
     }
 
-    public static int getPrice() {
+    public  int getPrice() {
         return price;
     }
 

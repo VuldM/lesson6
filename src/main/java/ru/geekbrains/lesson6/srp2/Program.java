@@ -9,9 +9,10 @@ public class Program {
      */
     public static void main(String[] args) {
         Order order = new Order();
-        order.inputFromConsole();
+        InputFromConsole inputFromConsole = new InputFromConsole();
+        inputFromConsole.inputFromConsole(order);
         SaveFormat save = new SaveFormat();
-        save.saveToJson();
+        save.saveToJson(order);
     }
 
 }
