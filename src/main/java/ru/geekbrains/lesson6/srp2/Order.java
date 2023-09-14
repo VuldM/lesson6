@@ -1,6 +1,5 @@
 package ru.geekbrains.lesson6.srp2;
 
-import java.util.Scanner;
 
 public class Order {
 
